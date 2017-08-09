@@ -3,3 +3,4 @@
 *.pyc
 env/*
 .idea/*
+db.sqlite3

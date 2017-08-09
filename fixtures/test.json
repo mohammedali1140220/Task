@@ -1,430 +1,347 @@
 [
+
    {
-      "model":"contenttypes.contenttype",
-      "pk":1,
-      "fields":{
-         "app_label":"admin",
-         "model":"logentry"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":2,
-      "fields":{
-         "app_label":"auth",
-         "model":"group"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":3,
-      "fields":{
-         "app_label":"auth",
-         "model":"permission"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":4,
-      "fields":{
-         "app_label":"contenttypes",
-         "model":"contenttype"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":5,
-      "fields":{
-         "app_label":"sessions",
-         "model":"session"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":6,
-      "fields":{
-         "app_label":"shawerma",
-         "model":"make"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":7,
-      "fields":{
-         "app_label":"shawerma",
-         "model":"view"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":8,
-      "fields":{
-         "app_label":"shawerma",
-         "model":"user"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":9,
-      "fields":{
-         "app_label":"shawerma",
-         "model":"has"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":10,
-      "fields":{
-         "app_label":"shawerma",
-         "model":"menu"
-      }
-   },
-   {
-      "model":"contenttypes.contenttype",
-      "pk":11,
-      "fields":{
-         "app_label":"shawerma",
-         "model":"order"
-      }
-   },
-   {
-      "model":"sessions.session",
-      "pk":"gzkmeafv8w8l3fh122syyrup1xxtcwtg",
-      "fields":{
-         "session_data":"NWYzNjQwMzg2YWM3YTdiNTE0YjFjNWYxNWY1MzczNDNiOGJjY2JhYjp7Il9hdXRoX3VzZXJfaGFzaCI6ImRjNDAxMDllNjg3MDczMzg0ZWFkNWZiYTA3Mzk0Y2RkNzY5OWMzYjIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=",
-         "expire_date":"2017-08-01T14:17:19.245Z"
-      }
-   },
-   {
-      "model":"shawerma.menu",
+      "model":"shawerma.menuitem",
       "pk":1,
       "fields":{
          "name":"shawerma1",
-         "order_type":"dish",
-         "price":"12.00"
+         "price":"12.00",
+         "created_date":"2017-07-26T11:45:53.105Z",
+         "updated_date":"2017-07-26T11:45:53.105Z"
       }
    },
    {
-      "model":"shawerma.menu",
+      "model":"shawerma.menuitem",
       "pk":2,
       "fields":{
          "name":"shawerma2",
-         "order_type":"dish",
-         "price":"13.00"
+         "price":"15.00",
+         "created_date":"2017-07-26T11:46:39.001Z",
+         "updated_date":"2017-07-26T11:46:39.001Z"
       }
    },
    {
-      "model":"shawerma.menu",
+      "model":"shawerma.menuitem",
       "pk":3,
       "fields":{
          "name":"shawerma3",
-         "order_type":"sandwitch",
-         "price":"8.00"
+         "price":"18.00",
+         "created_date":"2017-07-26T11:46:49.116Z",
+         "updated_date":"2017-07-26T11:46:49.116Z"
+      }
+   },
+   {
+      "model":"shawerma.orderditem",
+      "pk":5,
+      "fields":{
+         "menu":1,
+         "order":6,
+         "quantity":2
+      }
+   },
+   {
+      "model":"shawerma.orderditem",
+      "pk":6,
+      "fields":{
+         "menu":2,
+         "order":6,
+         "quantity":5
+      }
+   },
+   {
+      "model":"shawerma.orderditem",
+      "pk":7,
+      "fields":{
+         "menu":3,
+         "order":7,
+         "quantity":3
+      }
+   },
+   {
+      "model":"shawerma.orderditem",
+      "pk":8,
+      "fields":{
+         "menu":2,
+         "order":8,
+         "quantity":12
+      }
+   },
+   {
+      "model":"shawerma.orderditem",
+      "pk":9,
+      "fields":{
+         "menu":2,
+         "order":8,
+         "quantity":15
+      }
+   },
+   {
+      "model":"shawerma.orderditem",
+      "pk":10,
+      "fields":{
+         "menu":2,
+         "order":7,
+         "quantity":12
+      }
+   },
+   {
+      "model":"shawerma.orderditem",
+      "pk":11,
+      "fields":{
+         "menu":3,
+         "order":10,
+         "quantity":5
       }
    },
    {
       "model":"auth.permission",
       "pk":1,
       "fields":{
-         "name":"Can add log entry",
-         "content_type":1,
-         "codename":"add_logentry"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":2,
-      "fields":{
-         "name":"Can change log entry",
-         "content_type":1,
-         "codename":"change_logentry"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":3,
-      "fields":{
-         "name":"Can delete log entry",
-         "content_type":1,
-         "codename":"delete_logentry"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":4,
-      "fields":{
          "name":"Can add group",
-         "content_type":2,
+         "content_type":1,
          "codename":"add_group"
       }
    },
    {
       "model":"auth.permission",
-      "pk":5,
+      "pk":2,
       "fields":{
          "name":"Can change group",
-         "content_type":2,
+         "content_type":1,
          "codename":"change_group"
+      }
+   },
+   {
+      "model":"auth.permission",
+      "pk":3,
+      "fields":{
+         "name":"Can delete group",
+         "content_type":1,
+         "codename":"delete_group"
+      }
+   },
+   {
+      "model":"auth.permission",
+      "pk":4,
+      "fields":{
+         "name":"Can add permission",
+         "content_type":2,
+         "codename":"add_permission"
+      }
+   },
+   {
+      "model":"auth.permission",
+      "pk":5,
+      "fields":{
+         "name":"Can change permission",
+         "content_type":2,
+         "codename":"change_permission"
       }
    },
    {
       "model":"auth.permission",
       "pk":6,
       "fields":{
-         "name":"Can delete group",
+         "name":"Can delete permission",
          "content_type":2,
-         "codename":"delete_group"
+         "codename":"delete_permission"
       }
    },
    {
       "model":"auth.permission",
       "pk":7,
       "fields":{
-         "name":"Can add permission",
+         "name":"Can add content type",
          "content_type":3,
-         "codename":"add_permission"
+         "codename":"add_contenttype"
       }
    },
    {
       "model":"auth.permission",
       "pk":8,
       "fields":{
-         "name":"Can change permission",
+         "name":"Can change content type",
          "content_type":3,
-         "codename":"change_permission"
+         "codename":"change_contenttype"
       }
    },
    {
       "model":"auth.permission",
       "pk":9,
       "fields":{
-         "name":"Can delete permission",
+         "name":"Can delete content type",
          "content_type":3,
-         "codename":"delete_permission"
+         "codename":"delete_contenttype"
       }
    },
    {
       "model":"auth.permission",
       "pk":10,
       "fields":{
-         "name":"Can add content type",
+         "name":"Can add user",
          "content_type":4,
-         "codename":"add_contenttype"
+         "codename":"add_user"
       }
    },
    {
       "model":"auth.permission",
       "pk":11,
       "fields":{
-         "name":"Can change content type",
+         "name":"Can change user",
          "content_type":4,
-         "codename":"change_contenttype"
+         "codename":"change_user"
       }
    },
    {
       "model":"auth.permission",
       "pk":12,
       "fields":{
-         "name":"Can delete content type",
+         "name":"Can delete user",
          "content_type":4,
-         "codename":"delete_contenttype"
+         "codename":"delete_user"
       }
    },
    {
       "model":"auth.permission",
       "pk":13,
       "fields":{
-         "name":"Can add session",
+         "name":"Can add orderd item",
          "content_type":5,
-         "codename":"add_session"
+         "codename":"add_orderditem"
       }
    },
    {
       "model":"auth.permission",
       "pk":14,
       "fields":{
-         "name":"Can change session",
+         "name":"Can change orderd item",
          "content_type":5,
-         "codename":"change_session"
+         "codename":"change_orderditem"
       }
    },
    {
       "model":"auth.permission",
       "pk":15,
       "fields":{
-         "name":"Can delete session",
+         "name":"Can delete orderd item",
          "content_type":5,
-         "codename":"delete_session"
+         "codename":"delete_orderditem"
       }
    },
    {
       "model":"auth.permission",
       "pk":16,
       "fields":{
-         "name":"Can add make",
+         "name":"Can add menu item",
          "content_type":6,
-         "codename":"add_make"
+         "codename":"add_menuitem"
       }
    },
    {
       "model":"auth.permission",
       "pk":17,
       "fields":{
-         "name":"Can change make",
+         "name":"Can change menu item",
          "content_type":6,
-         "codename":"change_make"
+         "codename":"change_menuitem"
       }
    },
    {
       "model":"auth.permission",
       "pk":18,
       "fields":{
-         "name":"Can delete make",
+         "name":"Can delete menu item",
          "content_type":6,
-         "codename":"delete_make"
+         "codename":"delete_menuitem"
       }
    },
    {
       "model":"auth.permission",
       "pk":19,
       "fields":{
-         "name":"Can add view",
+         "name":"Can add order",
          "content_type":7,
-         "codename":"add_view"
+         "codename":"add_order"
       }
    },
    {
       "model":"auth.permission",
       "pk":20,
       "fields":{
-         "name":"Can change view",
+         "name":"Can change order",
          "content_type":7,
-         "codename":"change_view"
+         "codename":"change_order"
       }
    },
    {
       "model":"auth.permission",
       "pk":21,
       "fields":{
-         "name":"Can delete view",
+         "name":"Can delete order",
          "content_type":7,
-         "codename":"delete_view"
+         "codename":"delete_order"
       }
    },
    {
       "model":"auth.permission",
       "pk":22,
       "fields":{
-         "name":"Can add user",
+         "name":"Can add log entry",
          "content_type":8,
-         "codename":"add_user"
+         "codename":"add_logentry"
       }
    },
    {
       "model":"auth.permission",
       "pk":23,
       "fields":{
-         "name":"Can change user",
+         "name":"Can change log entry",
          "content_type":8,
-         "codename":"change_user"
+         "codename":"change_logentry"
       }
    },
    {
       "model":"auth.permission",
       "pk":24,
       "fields":{
-         "name":"Can delete user",
+         "name":"Can delete log entry",
          "content_type":8,
-         "codename":"delete_user"
+         "codename":"delete_logentry"
       }
    },
    {
       "model":"auth.permission",
       "pk":25,
       "fields":{
-         "name":"Can add has",
+         "name":"Can add session",
          "content_type":9,
-         "codename":"add_has"
+         "codename":"add_session"
       }
    },
    {
       "model":"auth.permission",
       "pk":26,
       "fields":{
-         "name":"Can change has",
+         "name":"Can change session",
          "content_type":9,
-         "codename":"change_has"
+         "codename":"change_session"
       }
    },
    {
       "model":"auth.permission",
       "pk":27,
       "fields":{
-         "name":"Can delete has",
+         "name":"Can delete session",
          "content_type":9,
-         "codename":"delete_has"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":28,
-      "fields":{
-         "name":"Can add menu",
-         "content_type":10,
-         "codename":"add_menu"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":29,
-      "fields":{
-         "name":"Can change menu",
-         "content_type":10,
-         "codename":"change_menu"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":30,
-      "fields":{
-         "name":"Can delete menu",
-         "content_type":10,
-         "codename":"delete_menu"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":31,
-      "fields":{
-         "name":"Can add order",
-         "content_type":11,
-         "codename":"add_order"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":32,
-      "fields":{
-         "name":"Can change order",
-         "content_type":11,
-         "codename":"change_order"
-      }
-   },
-   {
-      "model":"auth.permission",
-      "pk":33,
-      "fields":{
-         "name":"Can delete order",
-         "content_type":11,
-         "codename":"delete_order"
+         "codename":"delete_session"
       }
    },
    {
       "model":"shawerma.user",
       "pk":1,
       "fields":{
-         "password":"pbkdf2_sha256$36000$6uxnvoOnz7c8$Ki9EB91+Y6NTm7y9RXS6QOo9CoSSIHe6FARh/ZzNBLs=",
-         "last_login":"2017-07-18T14:17:19.180Z",
+         "password":"pbkdf2_sha256$36000$G18LJqN4nEFQ$P4SbyoVvS9a4tFZ7p7w/lmFHDFQ08jKK8CxFwaoLlgo=",
+         "last_login":"2017-07-26T11:45:31.701Z",
          "is_superuser":true,
          "username":"admin",
          "first_name":"",
@@ -432,7 +349,7 @@
          "email":"mohammedali1140220@gmail.com",
          "is_staff":true,
          "is_active":true,
-         "date_joined":"2017-07-18T08:44:21.581Z",
+         "date_joined":"2017-07-26T11:44:30.745Z",
          "groups":[
 
          ],
@@ -445,8 +362,8 @@
       "model":"shawerma.user",
       "pk":2,
       "fields":{
-         "password":"pbkdf2_sha256$36000$6uxnvoOnz7c8$Ki9EB91+Y6NTm7y9RXS6QOo9CoSSIHe6FARh/ZzNBLs=",
-         "last_login":"2017-07-18T14:34:18Z",
+         "password":"pbkdf2_sha256$36000$G18LJqN4nEFQ$P4SbyoVvS9a4tFZ7p7w/lmFHDFQ08jKK8CxFwaoLlgo=",
+         "last_login":"2017-07-26T11:48:05Z",
          "is_superuser":false,
          "username":"Ali",
          "first_name":"",
@@ -454,7 +371,7 @@
          "email":"",
          "is_staff":false,
          "is_active":true,
-         "date_joined":"2017-07-18T14:34:07Z",
+         "date_joined":"2017-07-26T11:47:38Z",
          "groups":[
 
          ],
@@ -467,8 +384,8 @@
       "model":"shawerma.user",
       "pk":3,
       "fields":{
-         "password":"111",
-         "last_login":"2017-07-18T14:35:22Z",
+         "password":"password123",
+         "last_login":"2017-07-26T11:48:20Z",
          "is_superuser":false,
          "username":"Ghaleb",
          "first_name":"",
@@ -476,7 +393,7 @@
          "email":"",
          "is_staff":false,
          "is_active":true,
-         "date_joined":"2017-07-18T14:35:16Z",
+         "date_joined":"2017-07-26T11:48:16Z",
          "groups":[
 
          ],
@@ -489,8 +406,8 @@
       "model":"shawerma.user",
       "pk":4,
       "fields":{
-         "password":"121",
-         "last_login":"2017-07-18T14:35:56Z",
+         "password":"password123",
+         "last_login":"2017-07-26T11:48:39Z",
          "is_superuser":false,
          "username":"Khaled",
          "first_name":"",
@@ -498,7 +415,7 @@
          "email":"",
          "is_staff":false,
          "is_active":true,
-         "date_joined":"2017-07-18T14:35:48Z",
+         "date_joined":"2017-07-26T11:48:36Z",
          "groups":[
 
          ],
@@ -509,102 +426,61 @@
    },
    {
       "model":"shawerma.order",
+      "pk":6,
+      "fields":{
+         "user":2,
+         "address":"Ram",
+         "created_date":"2017-07-26T12:07:55.029Z",
+         "updated_date":"2017-07-26T12:07:55.029Z"
+      }
+   },
+   {
+      "model":"shawerma.order",
+      "pk":7,
+      "fields":{
+         "user":3,
+         "address":"West",
+         "created_date":"2017-07-26T12:08:08.456Z",
+         "updated_date":"2017-07-26T12:08:08.456Z"
+      }
+   },
+   {
+      "model":"shawerma.order",
+      "pk":8,
+      "fields":{
+         "user":2,
+         "address":"Ram",
+         "created_date":"2017-07-26T12:08:18.113Z",
+         "updated_date":"2017-07-26T12:08:18.113Z"
+      }
+   },
+   {
+      "model":"shawerma.order",
+      "pk":9,
+      "fields":{
+         "user":2,
+         "address":"Ram",
+         "created_date":"2017-08-02T12:00:13.762Z",
+         "updated_date":"2017-08-02T12:00:13.762Z"
+      }
+   },
+   {
+      "model":"shawerma.order",
+      "pk":10,
+      "fields":{
+         "user":4,
+         "address":"West",
+         "created_date":"2017-08-06T13:33:02.459Z",
+         "updated_date":"2017-08-06T13:33:02.459Z"
+      }
+   },
+   {
+      "model":"admin.logentry",
       "pk":1,
       "fields":{
-         "user_id":2,
-         "menu_id":1,
-         "quantity":"1.00",
-         "address":"Ram",
-         "delivery_time":"10.00",
-         "date":"2017-07-18T14:40:13Z",
-         "price":"12.00"
-      }
-   },
-   {
-      "model":"shawerma.order",
-      "pk":2,
-      "fields":{
-         "user_id":2,
-         "menu_id":2,
-         "quantity":"2.00",
-         "address":"Ram",
-         "delivery_time":"10.00",
-         "date":"2017-07-18T14:42:17Z",
-         "price":"26.00"
-      }
-   },
-   {
-      "model":"shawerma.order",
-      "pk":3,
-      "fields":{
-         "user_id":3,
-         "menu_id":3,
-         "quantity":"3.00",
-         "address":"West",
-         "delivery_time":"20.00",
-         "date":"2017-07-18T14:43:03Z",
-         "price":"24.00"
-      }
-   },
-   {
-      "model":"shawerma.order",
-      "pk":4,
-      "fields":{
-         "user_id":3,
-         "menu_id":2,
-         "quantity":"2.00",
-         "address":"West",
-         "delivery_time":"20.00",
-         "date":"2017-07-18T14:43:35Z",
-         "price":"26.00"
-      }
-   },
-   {
-      "model":"admin.logentry",
-      "pk":1,
-      "fields":{
-         "action_time":"2017-07-18T14:35:13.447Z",
+         "action_time":"2017-07-26T11:45:53.106Z",
          "user":1,
-         "content_type":8,
-         "object_id":"2",
-         "object_repr":"Ali",
-         "action_flag":1,
-         "change_message":"[{\"added\": {}}]"
-      }
-   },
-   {
-      "model":"admin.logentry",
-      "pk":2,
-      "fields":{
-         "action_time":"2017-07-18T14:35:42.986Z",
-         "user":1,
-         "content_type":8,
-         "object_id":"3",
-         "object_repr":"Ghaleb",
-         "action_flag":1,
-         "change_message":"[{\"added\": {}}]"
-      }
-   },
-   {
-      "model":"admin.logentry",
-      "pk":3,
-      "fields":{
-         "action_time":"2017-07-18T14:36:05.925Z",
-         "user":1,
-         "content_type":8,
-         "object_id":"4",
-         "object_repr":"Khaled",
-         "action_flag":1,
-         "change_message":"[{\"added\": {}}]"
-      }
-   },
-   {
-      "model":"admin.logentry",
-      "pk":4,
-      "fields":{
-         "action_time":"2017-07-18T14:38:04.195Z",
-         "user":1,
-         "content_type":10,
+         "content_type":6,
          "object_id":"1",
          "object_repr":"shawerma1",
          "action_flag":1,
@@ -613,11 +489,11 @@
    },
    {
       "model":"admin.logentry",
-      "pk":5,
+      "pk":2,
       "fields":{
-         "action_time":"2017-07-18T14:38:29.616Z",
+         "action_time":"2017-07-26T11:46:39.001Z",
          "user":1,
-         "content_type":10,
+         "content_type":6,
          "object_id":"2",
          "object_repr":"shawerma2",
          "action_flag":1,
@@ -626,11 +502,11 @@
    },
    {
       "model":"admin.logentry",
-      "pk":6,
+      "pk":3,
       "fields":{
-         "action_time":"2017-07-18T14:38:57.917Z",
+         "action_time":"2017-07-26T11:46:49.117Z",
          "user":1,
-         "content_type":10,
+         "content_type":6,
          "object_id":"3",
          "object_repr":"shawerma3",
          "action_flag":1,
@@ -639,11 +515,50 @@
    },
    {
       "model":"admin.logentry",
+      "pk":4,
+      "fields":{
+         "action_time":"2017-07-26T11:48:14.540Z",
+         "user":1,
+         "content_type":4,
+         "object_id":"2",
+         "object_repr":"Ali",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":5,
+      "fields":{
+         "action_time":"2017-07-26T11:48:33.438Z",
+         "user":1,
+         "content_type":4,
+         "object_id":"3",
+         "object_repr":"Ghaleb",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":6,
+      "fields":{
+         "action_time":"2017-07-26T11:48:46.145Z",
+         "user":1,
+         "content_type":4,
+         "object_id":"4",
+         "object_repr":"Khaled",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
       "pk":7,
       "fields":{
-         "action_time":"2017-07-18T14:41:33.446Z",
+         "action_time":"2017-07-26T11:52:55.484Z",
          "user":1,
-         "content_type":11,
+         "content_type":7,
          "object_id":"1",
          "object_repr":"Order object",
          "action_flag":1,
@@ -654,9 +569,9 @@
       "model":"admin.logentry",
       "pk":8,
       "fields":{
-         "action_time":"2017-07-18T14:42:43.386Z",
+         "action_time":"2017-07-26T11:53:10.308Z",
          "user":1,
-         "content_type":11,
+         "content_type":7,
          "object_id":"2",
          "object_repr":"Order object",
          "action_flag":1,
@@ -667,9 +582,9 @@
       "model":"admin.logentry",
       "pk":9,
       "fields":{
-         "action_time":"2017-07-18T14:43:13.924Z",
+         "action_time":"2017-07-26T11:53:18.372Z",
          "user":1,
-         "content_type":11,
+         "content_type":7,
          "object_id":"3",
          "object_repr":"Order object",
          "action_flag":1,
@@ -680,11 +595,297 @@
       "model":"admin.logentry",
       "pk":10,
       "fields":{
-         "action_time":"2017-07-18T14:43:41.918Z",
+         "action_time":"2017-07-26T11:53:32.063Z",
          "user":1,
-         "content_type":11,
+         "content_type":7,
          "object_id":"4",
          "object_repr":"Order object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":11,
+      "fields":{
+         "action_time":"2017-07-26T11:53:49.072Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"5",
+         "object_repr":"Order object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":12,
+      "fields":{
+         "action_time":"2017-07-26T12:05:08.660Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"1",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":13,
+      "fields":{
+         "action_time":"2017-07-26T12:05:30.181Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"2",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":14,
+      "fields":{
+         "action_time":"2017-07-26T12:06:04.363Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"3",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":15,
+      "fields":{
+         "action_time":"2017-07-26T12:07:03.441Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"4",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":16,
+      "fields":{
+         "action_time":"2017-07-26T12:07:19.337Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"2",
+         "object_repr":"Order object",
+         "action_flag":3,
+         "change_message":""
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":17,
+      "fields":{
+         "action_time":"2017-07-26T12:07:26.113Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"1",
+         "object_repr":"Order object",
+         "action_flag":3,
+         "change_message":""
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":18,
+      "fields":{
+         "action_time":"2017-07-26T12:07:36.627Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"3",
+         "object_repr":"Order object",
+         "action_flag":3,
+         "change_message":""
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":19,
+      "fields":{
+         "action_time":"2017-07-26T12:07:40.032Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"4",
+         "object_repr":"Order object",
+         "action_flag":3,
+         "change_message":""
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":20,
+      "fields":{
+         "action_time":"2017-07-26T12:07:42.428Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"5",
+         "object_repr":"Order object",
+         "action_flag":3,
+         "change_message":""
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":21,
+      "fields":{
+         "action_time":"2017-07-26T12:07:55.029Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"6",
+         "object_repr":"Order object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":22,
+      "fields":{
+         "action_time":"2017-07-26T12:08:08.457Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"7",
+         "object_repr":"Order object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":23,
+      "fields":{
+         "action_time":"2017-07-26T12:08:18.113Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"8",
+         "object_repr":"Order object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":24,
+      "fields":{
+         "action_time":"2017-07-26T12:08:40.366Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"5",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":25,
+      "fields":{
+         "action_time":"2017-07-26T12:08:58.453Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"6",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":26,
+      "fields":{
+         "action_time":"2017-07-26T12:09:14.421Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"7",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":27,
+      "fields":{
+         "action_time":"2017-07-26T12:09:27.642Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"8",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":28,
+      "fields":{
+         "action_time":"2017-08-02T12:00:13.763Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"9",
+         "object_repr":"Order object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":29,
+      "fields":{
+         "action_time":"2017-08-02T12:00:44.985Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"9",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":30,
+      "fields":{
+         "action_time":"2017-08-02T12:01:14.287Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"10",
+         "object_repr":"OrderdItem object",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":31,
+      "fields":{
+         "action_time":"2017-08-06T13:33:02.460Z",
+         "user":1,
+         "content_type":7,
+         "object_id":"10",
+         "object_repr":"",
+         "action_flag":1,
+         "change_message":"[{\"added\": {}}]"
+      }
+   },
+   {
+      "model":"admin.logentry",
+      "pk":32,
+      "fields":{
+         "action_time":"2017-08-06T13:33:42.353Z",
+         "user":1,
+         "content_type":5,
+         "object_id":"11",
+         "object_repr":"OrderdItem object",
          "action_flag":1,
          "change_message":"[{\"added\": {}}]"
       }
